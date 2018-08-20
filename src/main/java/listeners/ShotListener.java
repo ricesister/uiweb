@@ -20,7 +20,7 @@ import common.LoggerUtil;
 
 
 public class ShotListener extends TestListenerAdapter{
-	private static String jenkins_path = "";
+	private static String jenkins_path = "C:/Users/admin/.jenkins/workspace/fs_ui/";
 	public static WebDriver driver;
 	
 	 
@@ -77,8 +77,8 @@ public class ShotListener extends TestListenerAdapter{
 	 */
 	private static void sendReport(String fileName,String url) {
 		
-       String sreenShotLink = "错误截图链接<p><a href=\"../"+url+fileName+"\"  target=\"_blank\">点击查看高清大图</a><p>";
-       String sreenShotImg = "<p>错误截图预览:<img id=\"img\" src=\"../"+url+fileName+"\" alt=\"error shot\" width=\"600\" height=\"300\"></p>";
+       String sreenShotLink = "错误截图链接<p><a href=\""+jenkins_path+url+fileName+"\"  target=\"_blank\">点击查看高清大图</a><p>";
+       String sreenShotImg = "<p>错误截图预览:<img id=\"img\" src=\""+jenkins_path+url+fileName+"\" alt=\"error shot\" width=\"600\" height=\"300\"></p>";
        Reporter.log(sreenShotLink);
        Reporter.log(sreenShotImg);
     }
