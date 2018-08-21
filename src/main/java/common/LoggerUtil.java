@@ -14,7 +14,7 @@ import pages.BasePage;
  */
 public class LoggerUtil {
 	
-	private static String reportName = "cps-东经科技ui自动化测试报告";
+	private static String reportName = "cps-东经科技crm(项目)ui自动化测试报告";
 	private static String splitTimeAndMsg = "===";
 	private static Logger logger = Logger.getLogger(LoggerUtil.class);
 	

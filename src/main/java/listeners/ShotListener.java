@@ -15,13 +15,25 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
-
+import common.FileUtil;
+import common.FtpUtil;
 import common.LoggerUtil;
 
 
 public class ShotListener extends TestListenerAdapter{
-	private static String jenkins_path = "C:/Users/admin/.jenkins/workspace/fs_ui/";
+	/**
+	 * 图片存储服务器根路径，根路径根据实际情况修改
+	 */
+	private static String username = "admin";
+	private static String password = "78LXlx";
+	private static String fwq_ip = "172.16.0.16:21";
+	
+	
+	
+	
+	
 	public static WebDriver driver;
+	
 	
 	 
 	
@@ -47,14 +59,31 @@ public class ShotListener extends TestListenerAdapter{
 	public void takeScreenShot(ITestResult tr) throws IOException {
 		 
 		
-		String url = "screens/"+common.DateUtil.getDateDay()+"/";
+		/*String url = "screens/"+common.DateUtil.getDateDay()+"/";*/
+		String url = common.DateUtil.getDateDay()+"/";
+		
 		SimpleDateFormat smf = new SimpleDateFormat("MMddHHmmss") ;
         String curTime = smf.format(new java.util.Date());
+        /**
+         * 图片名称
+         */
         String fileName = tr.getName()+"_"+curTime+".png";
         File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        //把截图拷贝到自定义的目录
-        FileUtils.copyFile(srcFile, new File(url+fileName));
-		LoggerUtil.info("失败截图"+fileName+"已保存");
+       /* //把截图拷贝到自定义的目录
+        FileUtils.copyFile(srcFile, new File(fwq_path+url+fileName));*/
+        
+        
+        /**
+         * ftp上传
+         */
+        //先下载到本地
+        String bdPath = "screens/"+url+fileName;
+        FileUtils.copyFile(srcFile, new File(bdPath));
+        LoggerUtil.info("本地失败截图"+fileName+"已保存");
+        //FileUtil.ftpFileUpload(bdPath, url, fileName);
+        FtpUtil.uploadFile(url, fileName, bdPath);
+		System.out.println("图片上传至服务器。。。");
+		
 		
 		/**
 		 * 清空3天(不一定是天，3个文件夹)以前的截图文件夹
@@ -76,16 +105,19 @@ public class ShotListener extends TestListenerAdapter{
 	 * @param fileName
 	 */
 	private static void sendReport(String fileName,String url) {
+		/**
+		 * 下载图片查看
+		 */
+		String sreenShotLink = "错误截图链接<p><a href=\"ftp://"+username+":"+password+"@"+fwq_ip+"/"+url+"/"+fileName+"\"  target=\"_blank\">点击查看高清大图</a><p>";
+	    String sreenShotImg = "<p>错误截图预览:<img id=\"img\" src=\"ftp://"+username+":"+password+"@"+fwq_ip+"/"+url+"/"+fileName+"\" alt=\"error shot\" width=\"600\" height=\"300\"></p>";
 		
-       String sreenShotLink = "错误截图链接<p><a href=\""+jenkins_path+url+fileName+"\"  target=\"_blank\">点击查看高清大图</a><p>";
-       String sreenShotImg = "<p>错误截图预览:<img id=\"img\" src=\""+jenkins_path+url+fileName+"\" alt=\"error shot\" width=\"600\" height=\"300\"></p>";
-       Reporter.log(sreenShotLink);
+		Reporter.log(sreenShotLink);
        Reporter.log(sreenShotImg);
     }
 	
 	
 	public static void main(String[] args) {
-		checkFileNum(3);
+		//checkFileNum(3);
 	}
 	
 	
@@ -117,7 +149,7 @@ public class ShotListener extends TestListenerAdapter{
 	
 	
 	/**
-     * 递归删除目录下的所有文件及子目录下所有文件
+      * 递归删除目录下的所有文件及子目录下所有文件
      * @param dir 将要删除的文件目录
      * @return boolean Returns "true" if all deletions were successful.
      *                 If a deletion fails, the method stops attempting to

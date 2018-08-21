@@ -72,7 +72,7 @@ public class LunBoTest {
 	}
 	
 	
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void addJFSC() {
 		LoggerUtil.info("添加积分商城轮播图脚本开始");
 		try {

@@ -1,5 +1,6 @@
 package common;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,10 +8,25 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.net.ftp.FTP;
+import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPReply;
+
+/**
+ * 
+ * @author fs
+ * @version 1.0.0
+ * @description 文件工具类
+ * @date 2018年8月21日 上午10:47:52
+ */
 public class FileUtil {
+	private static FTPClient ftpClient;
+	
+	
 	
 	public static void copyFile(String src,String target)
 	{	
@@ -52,6 +68,16 @@ public class FileUtil {
 	}
 	
 
-
+	public static byte[] readStream(InputStream inStream) throws Exception {  
+	    ByteArrayOutputStream outSteam = new ByteArrayOutputStream();  
+	    byte[] buffer = new byte[1024];  
+	    int len = -1;  
+	    while ((len = inStream.read(buffer)) != -1) {  
+	        outSteam.write(buffer, 0, len);  
+	    }  
+	    outSteam.close();  
+	    inStream.close();  
+	    return outSteam.toByteArray();  
+	}  
 
 }

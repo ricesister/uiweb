@@ -91,7 +91,7 @@ public class SYLBPage extends BasePage{
 		if(rows.size() == 5) {
 			LoggerUtil.info("轮播图位置已满，测试结束");
 		}
-		AssertUtil.assertNotEquals(rows.size(), 5, "轮播图位置已满，请先删除广告位！");
+		AssertUtil.assertNotEquals(rows.size(), 5, "断言结果：轮播图位置已满，请先删除广告位！");
 		return rows;
 	}
 	/**

@@ -63,16 +63,16 @@ public class BasePage {
 	public void open(String toUrl) {
 		if(toUrl == null || toUrl.equals(rootUrl)) {
 			driver.get(rootUrl);
-			LoggerUtil.info("打开网页："+rootUrl);
+			LoggerUtil.info("浏览器打开网页："+rootUrl);
 			
 		}
 		else {
 			driver.get(toUrl);
-			LoggerUtil.info("打开网页："+toUrl);
+			LoggerUtil.info("浏览器打开网页："+toUrl);
 		}
 		
 		driver.manage().window().maximize();
-		LoggerUtil.info("将网页最大化");
+		LoggerUtil.info("浏览器将网页最大化");
 	}
 	
 	/**
@@ -93,7 +93,7 @@ public class BasePage {
 		Actions action = new Actions(driver);
 		action.clickAndHold(from).moveToElement(to)	.release();
 		action.build().perform();
-		LoggerUtil.info(String.format("页面从%s移动到%s", from.toString(),to.toString()));
+		LoggerUtil.info("移动菜单");
 	}
 	
 	/**
@@ -105,13 +105,13 @@ public class BasePage {
 		try {
 			if (element.isEnabled()) {
 				element.click();
-				LoggerUtil.info(element.toString().trim()+"元素被点击");
+				LoggerUtil.info("点击页面元素："+element);
 			} 
 		} catch (Exception e) {
 			clickSymbol = false;
 			e.printStackTrace();
-			LoggerUtil.error("元素点击出现异常："+e.getMessage());
-			AssertUtil.assertEquals(clickSymbol, true, "元素无法点击");
+			LoggerUtil.error("元素点击出现异常：\n"+e.getMessage());
+			AssertUtil.assertEquals(clickSymbol, true, "元素点击出现异常：无法点击");
 		}
 	}
 	
@@ -139,13 +139,13 @@ public class BasePage {
 			if (element.isEnabled()) {
 				element.clear();
 				element.sendKeys(value);
-				LoggerUtil.info(element.toString().trim()+"元素被赋值："+value);
+				LoggerUtil.info("元素赋值内容："+value+"，元素："+element.toString().trim());
 			} 
 		} catch (Exception e) {
 			sendSymbol = false;
 			e.printStackTrace();
 			LoggerUtil.error("元素赋值出现异常：\n"+e.getMessage());
-			AssertUtil.assertEquals(sendSymbol, true, "元素无法被赋值！");
+			AssertUtil.assertEquals(sendSymbol, true, "元素赋值出现错误：元素赋值失败");
 		}
 	}
 	
@@ -158,13 +158,13 @@ public class BasePage {
 		try {
 			if (element.isEnabled()) {
 				element.clear();
-				LoggerUtil.info(element.toString().trim()+"元素内容被清空");
+				LoggerUtil.info("元素清空内容:"+element.toString().trim());
 			} 
 		} catch (Exception e) {
 			cleanSymbol = false;
 			e.printStackTrace();
 			LoggerUtil.error("元素清空出现异常：\n"+e.getMessage());
-			AssertUtil.assertEquals(sendSymbol, true, "元素无法被清空！");
+			AssertUtil.assertEquals(sendSymbol, true, "元素清空出现错误：清空失败");
 		}
 	}
 	
@@ -175,7 +175,7 @@ public class BasePage {
 	protected void verifyELEIsPresent(WebElement element) {
 		try {
 			if(element.isDisplayed()) {
-				LoggerUtil.info(element.toString().trim()+"元素在页面上显示");
+				LoggerUtil.info("元素在页面上显示："+element.toString().trim());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -189,7 +189,7 @@ public class BasePage {
 	 */
 	public String getCurrentTitle() {
 		String pageTitle = driver.getTitle();
-		LoggerUtil.info("当前页面title："+pageTitle);
+		LoggerUtil.info("浏览器当前页面title："+pageTitle);
 		return pageTitle;
 	}
 	
@@ -199,7 +199,7 @@ public class BasePage {
 	 */
 	public String getCurrentUrl() {
 		String pageUrl = driver.getCurrentUrl();
-		LoggerUtil.info("当前页面url是："+pageUrl);
+		LoggerUtil.info("浏览器当前页面url是："+pageUrl);
 		return pageUrl;
 	}
 	
@@ -208,12 +208,12 @@ public class BasePage {
 	 * @param expectUrl
 	 */
 	public void checkUrl(String expectUrl) {
-		LoggerUtil.info("确认脚本运行当前路径与期盼路径"+expectUrl+"一致");
-		AssertUtil.assertEquals(getCurrentUrl(), expectUrl, "脚本运行当前路径与期盼路径不一致");
+		LoggerUtil.info("确认脚本运行当前路径与期盼路径一致性");
+		AssertUtil.assertEquals(getCurrentUrl(), expectUrl, "确认结果：脚本运行当前路径与期盼路径不一致");
 	}
 	
 	public void containUrl(String expectUrl) {
-		LoggerUtil.info("确认脚本运行当前路径与期盼路径"+expectUrl+"是否为包含关系");
+		LoggerUtil.info("确认脚本运行当前路径与期盼路径是否为包含关系");
 		AssertUtil.assertContains(getCurrentUrl(), expectUrl);
 	}
 	
@@ -224,7 +224,7 @@ public class BasePage {
 	 * @param expectText
 	 */
 	public void checkText(WebElement ele,String expectText) {
-		AssertUtil.assertEquals(ele.getText(), expectText, "节点"+ele.toString()+"的内容"
+		AssertUtil.assertEquals(ele.getText(), expectText, "确认元素文本结果：节点"+ele.toString()+"的内容"
 				+ "与期盼文本"+expectText+"不一致");
 	}
 	
@@ -256,7 +256,7 @@ public class BasePage {
 	 * @param method
 	 */
 	protected void wait(int timeout,String locator,String method) {
-		LoggerUtil.info(String.format("显式等待%s秒路径为%s的元素", timeout, locator));
+		LoggerUtil.info(String.format("当前显式等待%s秒，元素：%s", timeout, locator));
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		if(method.equalsIgnoreCase("x")) {
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
@@ -288,7 +288,7 @@ public class BasePage {
 	 * @return
 	 */
 	public List<WebElement> getSortsElement(String[] path,String method){
-		AssertUtil.assertNotEquals(path.length, 0, "获取同系列联系关系的元素的Path数组不能为空");
+		AssertUtil.assertNotEquals(path.length, 0, "断言结果：获取同系列联系关系的元素的Path数组不能为空");
 		List<WebElement> elements = new ArrayList<WebElement>();
 		for(int i=0;i<path.length;i++) {
 			elements.add(getElement(path[i], method));
@@ -338,14 +338,14 @@ public class BasePage {
 			if(method.equalsIgnoreCase("part")){
 				return driver.findElement(By.partialLinkText(locate));
 			}
-			LoggerUtil.info(String.format("%s获取网页元素成功，元素定位：%s", method,locate));
+			LoggerUtil.info(String.format("获取网页元素：%s",locate));
 			
 			return driver.findElement(By.xpath(locate));
 		} catch (Exception e) {
 			assertSymbol = false;
 			e.printStackTrace();
-			LoggerUtil.error(String.format("%s获取网页元素失败，元素定位：%s", method,locate));
-			AssertUtil.assertEquals(assertSymbol, true, "元素定位失败！");
+			LoggerUtil.error(String.format("获取网页元素失败：%s",locate));
+			AssertUtil.assertEquals(assertSymbol, true, "断言结果：该元素无法通过定位获取");
 		}
 		return null;
 	}

@@ -40,27 +40,23 @@ public class CrmLoginPage extends BasePage{
 	public void login() throws InterruptedException {
 		open(null);
 		sleep(2000);
+		LoggerUtil.info("点击crm登录窗口");
 		click(getCrm());
 		sleep(2000);
+		LoggerUtil.info("输入用户名");
 		setUserName("1000000");
+		LoggerUtil.info("输入密码");
 		setPassWord("dj123456");
+		LoggerUtil.info("点击登录");
 		click(getSumbit());
 		sleep(5000);
 		
 		//断言
-		AssertUtil.assertEquals(getCurrentUrl().substring(0, 23), "http://192.168.23.163/?","登录验证当前路径失败");
+		AssertUtil.assertEquals(getCurrentUrl().substring(0, 23), "http://192.168.23.163/?","断言结果:没有进入crm主页");
 		LoggerUtil.info("登录crm系统成功");
-		//sleep(7000);
 		
 	}
 	
-	public static void main(String[] args) {
-		try {
-			new CrmLoginPage().login();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
 	
 	
 	private WebElement getCrm() {

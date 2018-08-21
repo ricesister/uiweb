@@ -45,8 +45,7 @@ public class CrmHomePage extends BasePage{
 	 * @throws InterruptedException
 	 */
 	public void toYYGL() throws InterruptedException {
-		//等待动画结束
-		//wait(10000, "//*[@id=\"first\"]/div/div/h1", "x");
+		LoggerUtil.info("等待主页动画结束");
 		sleep(8000);
 		click(getYYGL());
 		click(getYYGL());

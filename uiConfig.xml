@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui-config>
-	<!--测试地址  -->
+	<!--crm测试地址  -->
 	<ui-address>
 		<http-addrs>
-			<http-addr>http://192.168.10.170/</http-addr>
-			<http-addr>http://192.168.10.170/</http-addr>
+			<http>
+				<desc>线下crm自动化</desc>
+				<!-- 自动化crm测试地址 -->
+				<addr>http://192.168.10.170/</addr>
+				<username>1000000</username>
+				<password>dj123456</password>
+			</http>
+			<http>
+				<desc>线下crm</desc>
+				<addr>http://192.168.23.161/</addr>
+				<username>1000000</username>
+				<password>dj123456</password>
+			</http>
+			<http>
+				<desc>线下团购</desc>
+				<addr>http://192.168.10.202/group/grouponHome.html</addr>
+				<username>18868196139</username>
+				<password>dj123456</password>
+			</http>
 		</http-addrs>
-		
 	</ui-address>
-	<!-- 项目部署jenkins相当于screens的路径 -->
-	<jenkins-path></jenkins-path>
+	<path>
+		<!-- ftp上传服务器目录 -->
+		<file-path>D:\screens</file-path>
+	
+	</path>
+	
 
 </ui-config>
