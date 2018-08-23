@@ -36,7 +36,7 @@ public class BasePage {
 	
 	
 	public static WebDriver driver;
-	protected static String rootUrl = "http://192.168.23.161/";
+	protected static String rootUrl = "http://192.168.10.170/";
 	
 	/**
 	 * driver初始化

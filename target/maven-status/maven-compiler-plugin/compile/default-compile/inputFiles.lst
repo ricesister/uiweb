@@ -1,5 +1,6 @@
 C:\Users\admin\git\ui\uiweb\src\main\java\pages\BasePage.java
 C:\Users\admin\git\ui\uiweb\src\main\java\common\UIConfigUtil.java
+C:\Users\admin\git\ui\uiweb\src\main\java\listeners\RetryListener.java
 C:\Users\admin\git\ui\uiweb\src\main\java\pages\lunbo\APPPage.java
 C:\Users\admin\git\ui\uiweb\src\main\java\yunying\BBGLPage.java
 C:\Users\admin\git\ui\uiweb\src\main\java\pages\tuangou\TGLoginPage.java
@@ -23,5 +24,8 @@ C:\Users\admin\git\ui\uiweb\src\main\java\pages\lunbo\JFSCPage.java
 C:\Users\admin\git\ui\uiweb\src\main\java\common\AssertUtil.java
 C:\Users\admin\git\ui\uiweb\src\main\java\listeners\ShotListener.java
 C:\Users\admin\git\ui\uiweb\src\main\java\pages\lunbo\ZBTGPage.java
+C:\Users\admin\git\ui\uiweb\src\main\java\pages\chanpin\CPGLPage.java
 C:\Users\admin\git\ui\uiweb\src\main\java\common\PageExecutor.java
+C:\Users\admin\git\ui\uiweb\src\main\java\listeners\RetryListenerImpl.java
 C:\Users\admin\git\ui\uiweb\src\main\java\common\DateUtil.java
+C:\Users\admin\git\ui\uiweb\src\main\java\listeners\TestListener.java

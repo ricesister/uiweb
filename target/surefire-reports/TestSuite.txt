@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 133.363 sec <<< FAILURE!
-addSYLB(test.LunBoTest)  Time elapsed: 15.805 sec  <<< FAILURE!
-java.lang.AssertionError: 轮播图位置已满，请先删除广告位！
+Tests run: 13, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 266.385 sec <<< FAILURE!
+addSYLB(test.LunBoTest)  Time elapsed: 16.19 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.assertNotEquals(Assert.java:758)
 	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
@@ -11,12 +11,75 @@ java.lang.AssertionError: 轮播图位置已满，请先删除广告位！
 	at pages.lunbo.SYLBPage.addSYLB(SYLBPage.java:49)
 	at test.LunBoTest.addSYLB(LunBoTest.java:56)
 
-addZBTG(test.LunBoTest)  Time elapsed: 15.597 sec  <<< FAILURE!
-java.lang.AssertionError: 轮播图位置已满，请先删除广告位！
+addSYLB(test.LunBoTest)  Time elapsed: 16.074 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.SYLBPage.addSYLB(SYLBPage.java:49)
+	at test.LunBoTest.addSYLB(LunBoTest.java:56)
+
+addSYLB(test.LunBoTest)  Time elapsed: 15.795 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.SYLBPage.addSYLB(SYLBPage.java:49)
+	at test.LunBoTest.addSYLB(LunBoTest.java:56)
+
+addZBTG(test.LunBoTest)  Time elapsed: 15.944 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.assertNotEquals(Assert.java:758)
 	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
 	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
 	at pages.lunbo.ZBTGPage.addZBTG(ZBTGPage.java:31)
 	at test.LunBoTest.addZBTG(LunBoTest.java:68)
+
+addZBTG(test.LunBoTest)  Time elapsed: 15.803 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.ZBTGPage.addZBTG(ZBTGPage.java:31)
+	at test.LunBoTest.addZBTG(LunBoTest.java:68)
+
+addZBTG(test.LunBoTest)  Time elapsed: 15.904 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.ZBTGPage.addZBTG(ZBTGPage.java:31)
+	at test.LunBoTest.addZBTG(LunBoTest.java:68)
+
+addJFSC(test.LunBoTest)  Time elapsed: 15.909 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.JFSCPage.addJFSC(JFSCPage.java:27)
+	at test.LunBoTest.addJFSC(LunBoTest.java:80)
+
+addJFSC(test.LunBoTest)  Time elapsed: 15.932 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.JFSCPage.addJFSC(JFSCPage.java:27)
+	at test.LunBoTest.addJFSC(LunBoTest.java:80)
+
+addJFSC(test.LunBoTest)  Time elapsed: 29.653 sec  <<< FAILURE!
+java.lang.AssertionError: 断言结果：轮播图位置已满，请先删除广告位！
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:758)
+	at common.AssertUtil.assertNotEquals(AssertUtil.java:30)
+	at pages.lunbo.SYLBPage.checkPicNum(SYLBPage.java:94)
+	at pages.lunbo.JFSCPage.addJFSC(JFSCPage.java:27)
+	at test.LunBoTest.addJFSC(LunBoTest.java:80)
 

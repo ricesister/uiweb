@@ -52,7 +52,7 @@ public class CrmLoginPage extends BasePage{
 		sleep(5000);
 		
 		//断言
-		AssertUtil.assertEquals(getCurrentUrl().substring(0, 23), "http://192.168.23.163/?","断言结果:没有进入crm主页");
+		AssertUtil.assertEquals(getCurrentUrl().substring(0, 23), "http://192.168.10.201/?","断言结果:没有进入crm主页");
 		LoggerUtil.info("登录crm系统成功");
 		
 	}

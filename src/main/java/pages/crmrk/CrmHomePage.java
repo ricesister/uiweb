@@ -39,13 +39,20 @@ public class CrmHomePage extends BasePage{
 	 * 活动中心子菜单
 	 */
 	private String hdgl = "//*[@id=\"menu\"]/div/ul/li[13]/ul/li[2]";
+	/**
+	 * 产品管理
+	 */
+	private String cpgl="//*[@id=\"header\"]/ul/li[2]";
+
+	private String subCpgl="//*[@id=\"menu\"]/div/ul/li[2]/span";
 	
 	/**
 	 * 进入运营管理
 	 * @throws InterruptedException
 	 */
 	public void toYYGL() throws InterruptedException {
-		LoggerUtil.info("等待主页动画结束");
+		//等待动画结束
+		//wait(10000, "//*[@id=\"first\"]/div/div/h1", "x");
 		sleep(8000);
 		click(getYYGL());
 		click(getYYGL());
@@ -87,7 +94,28 @@ public class CrmHomePage extends BasePage{
 		}
 		LoggerUtil.info("进入活动中心菜单");
 	}
+	/**
+	 * 进入产品管理
+	 * @throws InterruptedException
+	 */
+	public void toCPGL() throws InterruptedException {
+		sleep(8000);
+		click(getCPGL());
+		LoggerUtil.info("进入产品管理");
+	}
 	
+	public void toSubCPGL() {
+		if(checkVisable(getSubCPGL())) {
+			click(getSubCPGL());
+			LoggerUtil.info("进入子菜单产品管理");
+		}else {
+			LoggerUtil.info("没有找到产品管理子菜单");
+		}
+	}
+	private WebElement getSubCPGL() {
+		return getElement(subCpgl, "x");
+	}
+
 	private WebElement getYYGL() {
 		return getElement(yygl, "x");
 	}
@@ -118,6 +146,9 @@ public class CrmHomePage extends BasePage{
 
 	public WebElement getKfycdd() {
 		return getElement(kfycdd, "x");
+	}
+	public WebElement getCPGL() {
+		return getElement(cpgl,"x");
 	}
 
 	

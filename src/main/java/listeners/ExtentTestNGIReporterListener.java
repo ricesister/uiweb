@@ -116,7 +116,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         htmlReporter.config().setReportName(LoggerUtil.getReportName());
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-        htmlReporter.config().setTheme(Theme.STANDARD);
+        htmlReporter.config().setTheme(Theme.DARK);
         //设置点击效果：.node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}
         //设置系统信息样式：.card-panel.environment  th:first-child{ width:30%;}
         htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}  .card-panel.environment  th:first-child{ width:30%;}");
@@ -132,7 +132,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         extent.setSystemInfo("os.name",properties.getProperty("os.name","未知"));
         extent.setSystemInfo("os.arch",properties.getProperty("os.arch","未知"));
         extent.setSystemInfo("os.version",properties.getProperty("os.version","未知"));
-        extent.setSystemInfo("java.version",properties.getProperty("java.version","未知"));
+        extent.setSystemInfo("java.version",properties.getProperty("java.version","jdk1.8"));
         extent.setSystemInfo("java.home",properties.getProperty("java.home","未知"));
         extent.setSystemInfo("user.name",properties.getProperty("user.name","未知"));
         extent.setSystemInfo("user.dir",properties.getProperty("user.dir","未知"));
@@ -196,7 +196,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
                     test.log(status, "Test " + status.toString().toLowerCase() + "ed");
                 }
                 //设置log的时间，根据ReportUtil.log()的特定格式进行处理获取数据log的时间
-                Iterator logIterator = test.getModel().getLogContext().getIterator();
+                /*Iterator logIterator = test.getModel().getLogContext().getIterator();
                 while (logIterator.hasNext()){
                     Log log = (Log) logIterator.next();
                     String details = log.getDetails();
@@ -207,7 +207,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
                     }else{
                         log.setTimestamp(getTime(result.getEndMillis()));
                     }
-                }
+                }*/
                 test.getModel().setStartTime(getTime(result.getStartMillis()));
                 test.getModel().setEndTime(getTime(result.getEndMillis()));
             }

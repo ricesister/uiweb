@@ -60,7 +60,7 @@ public class LunBoTest {
 		}
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,enabled=true)
 	public void addZBTG() {
 		LoggerUtil.info("添加纸板团购轮播图脚本开始");
 		try {
@@ -72,7 +72,7 @@ public class LunBoTest {
 	}
 	
 	
-	//@Test(priority=2)
+	@Test(priority=2,enabled=true)
 	public void addJFSC() {
 		LoggerUtil.info("添加积分商城轮播图脚本开始");
 		try {
@@ -84,7 +84,7 @@ public class LunBoTest {
 	}
 	
 	
-	@Test(priority=3)
+	@Test(priority=3,enabled=true)
 	public void addZBRK() {
 		LoggerUtil.info("编辑纸板团购入口轮播图脚本开始");
 		try {
@@ -96,7 +96,7 @@ public class LunBoTest {
 	}
 	
 	
-	@Test(priority=4)
+	@Test(priority=4,enabled=true)
 	public void addJFRK() {
 		try {
 			homePage.toGGGL();
@@ -106,7 +106,7 @@ public class LunBoTest {
 		}
 	}
 	
-	@Test(priority=5)
+	@Test(priority=5,enabled=true)
 	public void addApp() {
 		try {
 			homePage.toGGGL();

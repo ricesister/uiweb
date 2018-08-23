@@ -3,12 +3,15 @@
 <suite name="cps-ui自动化测试" verbose="1" preserve-order="true" parallel="false">
   <test name="cps-ui自动化测试">
     <classes>
-      <class name="test.LunBoTest"/>
-      <class name="test.TGTest"></class>
+      <!-- <class name="test.LunBoTest"/>
+      <class name="test.TGTest"></class> -->
+      <class name="test.ProductTest"></class>
     </classes>
   </test> <!-- Test -->
  	<listeners>
 		<listener class-name="listeners.ExtentTestNGIReporterListener" />
 		<listener class-name="listeners.ShotListener"></listener>
+		<listener class-name="listeners.RetryListenerImpl"></listener>
+		<listener class-name="listeners.TestListener"></listener>
 	</listeners>
 </suite> <!-- Suite -->

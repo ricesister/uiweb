@@ -5725,3 +5725,605 @@ Session ID: 98db1a236378fe0857cfd4e8802169cc
 2018-08-21 09:43:51 [common.LoggerUtil]-[INFO] x获取网页元素成功，元素定位：//*[@id="home"]/div[2]/div/div/div[2]/div[3]/div[3]/button
 2018-08-21 09:43:52 [common.LoggerUtil]-[INFO] [[ChromeDriver: chrome on XP (0c45aec5583473110992e1cc60a458e1)] -> xpath: //*[@id="home"]/div[2]/div/div/div[2]/div[3]/div[3]/button]元素被点击
 2018-08-21 09:43:53 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-22 09:53:11 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 09:53:13 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.23.161/
+2018-08-22 09:53:14 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 09:53:14 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:16 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 09:53:16 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 09:53:16 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 09:53:16 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:18 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 09:53:18 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="username"]]
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="password"]]
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 09:53:19 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 09:53:27 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.23.163/?oncetoken=fdd131ba-393d-49b8-a481-282ef0fd29f3#/
+2018-08-22 09:53:27 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.23.163/?与期望值：http://192.168.23.163/?相同
+2018-08-22 09:53:27 [common.LoggerUtil]-[INFO] 登录crm系统成功
+2018-08-22 09:53:27 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 09:53:27 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 09:53:27 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 09:53:35 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 09:53:36 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 09:53:36 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 09:53:36 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 09:53:36 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 09:53:36 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:38 [common.LoggerUtil]-[INFO] 进入运营管理菜单
+2018-08-22 09:53:38 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 09:53:38 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/div
+2018-08-22 09:53:39 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="menu"]/div/ul/li[6]/div]
+2018-08-22 09:53:39 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 09:53:39 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:41 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 09:53:41 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 09:53:41 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:43 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 09:53:43 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 09:53:43 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 09:53:43 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 09:53:43 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 09:53:44 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822095344.png已保存
+2018-08-22 09:53:44 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 09:53:44 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 09:53:44 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 09:53:52 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 09:53:53 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 09:53:53 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 09:53:53 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 09:53:53 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 09:53:53 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:55 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 09:53:56 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 09:53:56 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:53:58 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 09:53:58 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 09:53:58 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:54:00 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 09:54:00 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 09:54:00 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 09:54:00 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 09:54:00 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 09:54:01 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822095400.png已保存
+2018-08-22 09:54:01 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 09:54:01 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 09:54:01 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 09:54:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 09:54:09 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 09:54:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 09:54:10 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 09:54:10 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 09:54:10 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:54:12 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 09:54:12 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 09:54:12 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:54:14 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 09:54:14 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a9cae039c586ce8c568c80ce6c543654)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 09:54:14 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 09:54:16 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 09:54:17 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 09:54:17 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 09:54:17 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 09:54:17 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 09:54:17 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822095417.png已保存
+2018-08-22 09:54:18 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-22 10:09:57 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:09:59 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.23.161/
+2018-08-22 10:10:00 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:10:00 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:02 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:10:02 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:10:02 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:10:02 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:04 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:10:04 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="username"]]
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="password"]]
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 10:10:05 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 10:10:11 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.23.163/?oncetoken=8e231cee-134e-4fc6-aba2-1e1fb58aaf74#/
+2018-08-22 10:10:11 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.23.163/?与期望值：http://192.168.23.163/?相同
+2018-08-22 10:10:11 [common.LoggerUtil]-[INFO] 登录crm系统成功
+2018-08-22 10:10:11 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:10:11 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:10:11 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:10:19 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:10:19 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:10:19 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:10:20 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:10:20 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:10:20 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:22 [common.LoggerUtil]-[INFO] 进入运营管理菜单
+2018-08-22 10:10:22 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:10:22 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/div
+2018-08-22 10:10:22 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="menu"]/div/ul/li[6]/div]
+2018-08-22 10:10:22 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:10:22 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:24 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:10:25 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:10:25 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:27 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:10:27 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:10:27 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:10:27 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:10:27 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:10:28 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101027.png已保存
+2018-08-22 10:10:28 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:10:28 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:10:28 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:10:36 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:10:36 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:10:36 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:10:37 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:10:37 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:10:37 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:39 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:10:39 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:10:39 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:41 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:10:42 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:10:42 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:44 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:10:44 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:10:44 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:10:44 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:10:44 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:10:45 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101044.png已保存
+2018-08-22 10:10:45 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:10:45 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:10:45 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:10:53 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:10:53 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:10:53 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:10:54 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:10:54 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:10:54 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:56 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:10:56 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:10:56 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:10:58 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:10:58 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (dc0ac20884cfe3b41222e0283bcf14b4)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:10:58 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:11:00 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:11:00 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:11:00 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:11:01 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:11:01 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:11:01 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101101.png已保存
+2018-08-22 10:11:02 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-22 10:13:02 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:13:04 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.23.161/
+2018-08-22 10:13:05 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:13:05 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:07 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:13:07 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:13:07 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:13:07 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="username"]]
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="password"]]
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:13:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:13:10 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 10:13:10 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 10:13:15 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.23.163/?oncetoken=857f8cc3-d19e-48f5-905a-2c5f4e0786c3#/
+2018-08-22 10:13:15 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.23.163/?与期望值：http://192.168.23.163/?相同
+2018-08-22 10:13:15 [common.LoggerUtil]-[INFO] 登录crm系统成功
+2018-08-22 10:13:15 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:13:15 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:13:15 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:13:23 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:13:24 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:13:24 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:13:24 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:13:24 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:13:24 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:26 [common.LoggerUtil]-[INFO] 进入运营管理菜单
+2018-08-22 10:13:26 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:13:26 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/div
+2018-08-22 10:13:27 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="menu"]/div/ul/li[6]/div]
+2018-08-22 10:13:27 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:13:27 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:29 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:13:29 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:13:29 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:31 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:13:31 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:13:31 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:13:31 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:13:31 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:13:32 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101332.png已保存
+2018-08-22 10:13:32 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:13:32 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:13:32 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:13:40 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:13:40 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:13:40 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:13:41 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:13:41 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:13:41 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:43 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:13:43 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:13:43 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:45 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:13:46 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:13:46 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101348.png已保存
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:13:48 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:13:56 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:13:57 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:13:57 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:13:57 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:13:57 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:13:57 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:14:00 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:14:00 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:14:00 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:14:02 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:14:02 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (308cc167a87dd39d5aa40e94287f585f)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:14:02 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:14:04 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:14:04 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:14:04 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:14:04 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:14:04 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:14:05 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101404.png已保存
+2018-08-22 10:14:06 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-22 10:15:59 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:16:01 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.23.161/
+2018-08-22 10:16:02 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:16:02 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:04 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:16:04 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:16:04 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:16:04 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="username"]]
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="password"]]
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 10:16:06 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 10:16:15 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.23.163/?oncetoken=e02f72f3-76c4-4c63-9468-b4fb6a172ce9#/
+2018-08-22 10:16:15 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.23.163/?与期望值：http://192.168.23.163/?相同
+2018-08-22 10:16:15 [common.LoggerUtil]-[INFO] 登录crm系统成功
+2018-08-22 10:16:15 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:16:15 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:16:15 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:16:23 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:16:24 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:16:24 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:16:24 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:16:24 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:16:24 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:27 [common.LoggerUtil]-[INFO] 进入运营管理菜单
+2018-08-22 10:16:27 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:16:27 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/div
+2018-08-22 10:16:27 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="menu"]/div/ul/li[6]/div]
+2018-08-22 10:16:27 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:16:27 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:29 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:16:30 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:16:30 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:32 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:16:32 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:16:32 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:16:32 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:16:32 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:16:32 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101632.png已保存
+2018-08-22 10:16:33 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第1次
+2018-08-22 10:16:33 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:16:33 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:16:33 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:16:41 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:16:41 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:16:41 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:16:42 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:16:42 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:16:42 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:44 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:16:44 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:16:44 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:46 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:16:46 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:16:46 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:16:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101649.png已保存
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第2次
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:16:49 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:16:57 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:16:57 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:16:57 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:16:58 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:16:58 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:16:58 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:17:00 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:17:00 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:17:00 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:17:02 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:17:03 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (fbcaffa9b733f8cb35b8b228363bf863)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:17:03 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822101705.png已保存
+2018-08-22 10:17:05 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第3次
+2018-08-22 10:17:07 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-22 10:18:39 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:18:41 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.23.161/
+2018-08-22 10:18:42 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:18:42 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:18:44 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:18:44 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:18:44 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (aaf68d41ecbfe3065850b73db50a0d59)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:18:44 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (aaf68d41ecbfe3065850b73db50a0d59)] -> xpath: //*[@id="username"]]
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (aaf68d41ecbfe3065850b73db50a0d59)] -> xpath: //*[@id="password"]]
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:18:46 [common.LoggerUtil]-[ERROR] 获取网页元素失败：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:18:46 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：false与期望值：true相同
+2018-08-22 10:20:01 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:20:03 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.23.161/
+2018-08-22 10:20:04 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:20:04 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:20:06 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:20:06 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:20:06 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (5ef0c6356198f5dda9e986afa9c99d55)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:20:06 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:20:08 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:20:08 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (5ef0c6356198f5dda9e986afa9c99d55)] -> xpath: //*[@id="username"]]
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (5ef0c6356198f5dda9e986afa9c99d55)] -> xpath: //*[@id="password"]]
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:20:09 [common.LoggerUtil]-[ERROR] 获取网页元素失败：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:20:09 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：false与期望值：true相同
+2018-08-22 10:21:39 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:21:42 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.10.170/
+2018-08-22 10:21:43 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:21:43 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:21:45 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:21:45 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:21:45 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (15beb068bf197a1e9792b493a015086c)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:21:45 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:21:47 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:21:47 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (15beb068bf197a1e9792b493a015086c)] -> xpath: //*[@id="username"]]
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (15beb068bf197a1e9792b493a015086c)] -> xpath: //*[@id="password"]]
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (15beb068bf197a1e9792b493a015086c)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 10:21:48 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 10:21:54 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.10.201/?oncetoken=a9464879-53dc-41ad-9306-142322b3c305#/
+2018-08-22 10:21:54 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.10.201/?与期望值：http://192.168.10.170/?相同
+2018-08-22 10:22:41 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:22:43 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.10.170/
+2018-08-22 10:22:44 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:22:44 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:22:46 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:22:46 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:22:46 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:22:46 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="username"]]
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="password"]]
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 10:22:48 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 10:22:54 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.10.201/?oncetoken=10992bc1-3932-476a-b6df-0d511a0dd338#/
+2018-08-22 10:22:54 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.10.201/?与期望值：http://192.168.10.201/?相同
+2018-08-22 10:22:54 [common.LoggerUtil]-[INFO] 登录crm系统成功
+2018-08-22 10:22:54 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:22:54 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:22:54 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:23:02 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:23:02 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:23:02 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:23:02 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:23:02 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:23:02 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:04 [common.LoggerUtil]-[INFO] 进入运营管理菜单
+2018-08-22 10:23:04 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:23:05 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/div
+2018-08-22 10:23:05 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="menu"]/div/ul/li[6]/div]
+2018-08-22 10:23:05 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:23:05 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:07 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:23:07 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:23:07 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822102310.png已保存
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第1次
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:23:10 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:23:18 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:23:19 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:23:19 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:23:19 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:23:19 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:23:19 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:21 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:23:21 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:23:21 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:23 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:23:24 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:23:24 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:26 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:23:26 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:23:26 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:23:26 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:23:26 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:23:27 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822102326.png已保存
+2018-08-22 10:23:27 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第2次
+2018-08-22 10:23:27 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:23:27 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:23:27 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:23:35 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:23:35 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:23:35 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:23:36 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:23:36 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:23:36 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:38 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:23:38 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:23:38 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:40 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:23:40 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (facdac2eb423e745270cfcacb610589c)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:23:40 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:23:42 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:23:42 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:23:42 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:23:42 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:23:42 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:23:43 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822102342.png已保存
+2018-08-22 10:23:43 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第3次
+2018-08-22 10:23:44 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-22 10:58:31 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-22 10:58:33 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.10.170/
+2018-08-22 10:58:34 [common.LoggerUtil]-[INFO] 浏览器将网页最大化
+2018-08-22 10:58:34 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:58:36 [common.LoggerUtil]-[INFO] 点击crm登录窗口
+2018-08-22 10:58:36 [common.LoggerUtil]-[INFO] 获取网页元素：/html/body/div[10]/div[2]/div[3]/ul/li[1]
+2018-08-22 10:58:36 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: /html/body/div[10]/div[2]/div[3]/ul/li[1]]
+2018-08-22 10:58:36 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:58:38 [common.LoggerUtil]-[INFO] 输入用户名
+2018-08-22 10:58:38 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="username"]
+2018-08-22 10:58:38 [common.LoggerUtil]-[INFO] 元素赋值内容：1000000，元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="username"]]
+2018-08-22 10:58:38 [common.LoggerUtil]-[INFO] 输入密码
+2018-08-22 10:58:38 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="password"]
+2018-08-22 10:58:39 [common.LoggerUtil]-[INFO] 元素赋值内容：dj123456，元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="password"]]
+2018-08-22 10:58:39 [common.LoggerUtil]-[INFO] 点击登录
+2018-08-22 10:58:39 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="login-zhanghao"]/div[7]/button
+2018-08-22 10:58:39 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="login-zhanghao"]/div[7]/button]
+2018-08-22 10:58:39 [common.LoggerUtil]-[INFO] 页面强制等待：5000毫秒
+2018-08-22 10:58:44 [common.LoggerUtil]-[INFO] 浏览器当前页面url是：http://192.168.10.201/?oncetoken=95c6f20a-00c9-42e1-86ec-0981b4639a08#/
+2018-08-22 10:58:44 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：http://192.168.10.201/?与期望值：http://192.168.10.201/?相同
+2018-08-22 10:58:44 [common.LoggerUtil]-[INFO] 登录crm系统成功
+2018-08-22 10:58:44 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:58:44 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:58:44 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:58:52 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:58:52 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:58:52 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:58:53 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:58:53 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:58:53 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:58:55 [common.LoggerUtil]-[INFO] 进入运营管理菜单
+2018-08-22 10:58:55 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:58:55 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/div
+2018-08-22 10:58:55 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="menu"]/div/ul/li[6]/div]
+2018-08-22 10:58:55 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:58:55 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:58:57 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:58:58 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:58:58 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:00 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:59:00 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:59:00 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:59:00 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:59:00 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:59:01 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822105900.png已保存
+2018-08-22 10:59:01 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第1次
+2018-08-22 10:59:01 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:59:01 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:59:01 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:59:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:59:09 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:59:09 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:59:10 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:59:10 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:59:10 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:12 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:59:12 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:59:12 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:14 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:59:14 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:59:14 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:16 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:59:16 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:59:16 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822105917.png已保存
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] >>>>用例失败，开始重试第2次
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] 添加首页轮播图脚本开始
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] 等待主页动画结束
+2018-08-22 10:59:17 [common.LoggerUtil]-[INFO] 页面强制等待：8000毫秒
+2018-08-22 10:59:25 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:59:25 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:59:25 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="header"]/ul/li[6]
+2018-08-22 10:59:26 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="header"]/ul/li[6]]
+2018-08-22 10:59:26 [common.LoggerUtil]-[INFO] 点击运营管理
+2018-08-22 10:59:26 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:28 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:59:28 [common.LoggerUtil]-[INFO] 进入广告管理菜单
+2018-08-22 10:59:28 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:30 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="menu"]/div/ul/li[6]/ul/li[1]
+2018-08-22 10:59:31 [common.LoggerUtil]-[INFO] 点击页面元素：[[ChromeDriver: chrome on XP (a8f9599431c2551a84497abd3f6ede36)] -> xpath: //*[@id="menu"]/div/ul/li[6]/ul/li[1]]
+2018-08-22 10:59:31 [common.LoggerUtil]-[INFO] 页面强制等待：2000毫秒
+2018-08-22 10:59:33 [common.LoggerUtil]-[INFO] 获取网页元素：//*[@id="tHeader"]
+2018-08-22 10:59:33 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：首页轮播图管理与期望值：首页轮播图管理相同
+2018-08-22 10:59:33 [common.LoggerUtil]-[INFO] 进入首页轮播图管理页面
+2018-08-22 10:59:33 [common.LoggerUtil]-[INFO] 轮播图位置已满，测试结束
+2018-08-22 10:59:33 [common.LoggerUtil]-[INFO] 断言验证：验证页面元素实际值：5与期望值：5相同
+2018-08-22 10:59:33 [common.LoggerUtil]-[INFO] 本地失败截图addSYLB_0822105933.png已保存
+2018-08-22 10:59:34 [common.LoggerUtil]-[INFO] 退出浏览器，退出驱动
+2018-08-23 14:36:06 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:36:41 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-23 14:37:23 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:38:53 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:40:51 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:41:40 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:42:27 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:43:42 [common.LoggerUtil]-[INFO] 新增产品脚本开始
+2018-08-23 14:45:20 [common.LoggerUtil]-[INFO] 初始化chromedriver成功！
+2018-08-23 14:45:22 [common.LoggerUtil]-[INFO] 浏览器打开网页：http://192.168.10.170/
