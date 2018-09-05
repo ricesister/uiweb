@@ -32,7 +32,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -44,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Aug 23, 2018 2:36:41 PM</span>
+				<span class='label suite-start-time'>Sep 5, 2018 11:20:30 AM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -65,7 +66,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -119,7 +120,7 @@
 					<span><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>0</span> test(s) failed, <span class='strong'>7</span> others
+					<span class='strong'>1</span> test(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -134,7 +135,7 @@
 					<span><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>0</span> step(s) failed, <span class='strong'>7</span> others
+					<span class='strong'>1</span> step(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -149,17 +150,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>addSYLB</span>
-						<span class='test-time'>Aug 23, 2018 2:36:41 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-name'>tuangou_xiadan---团购下单</span>
+						<span class='test-time'>Sep 5, 2018 11:20:30 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>Sep 5, 2018 11:20:30 AM</span>
+	<span class='label end-time'>Sep 5, 2018 11:20:40 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+356ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -171,214 +172,181 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>-------ui test begin-------</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>addZBTG</span>
-						<span class='test-time'>Aug 23, 2018 2:36:41 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+6ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>团购下单脚本开始</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>获取网页元素：/html/body/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[1]/span[2]</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>addJFSC</span>
-						<span class='test-time'>Aug 23, 2018 2:36:41 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+3ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>点击页面元素：[[ChromeDriver: chrome on XP (3f10e73a66d2f8575a7b5be3bae23ad8)] -> xpath: /html/body/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[1]/span[2]]</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>确认脚本运行当前路径与期盼路径一致性</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>addZBRK</span>
-						<span class='test-time'>Aug 23, 2018 2:36:41 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>浏览器当前页面url是：http://192.168.10.202/personalCenter.html</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>断言验证：验证页面元素实际值：http://192.168.10.202/personalCenter.html与期望值：http://192.168.10.202/personalCenter.html相同</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>addJFRK</span>
-						<span class='test-time'>Aug 23, 2018 2:36:42 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:42 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>进入我的中心页面</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>获取网页元素：/html/body/div[2]/div/div[1]/ul/li[1]/ul/li[1]/a</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>addApp</span>
-						<span class='test-time'>Aug 23, 2018 2:36:42 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:42 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+32ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>点击页面元素：[[ChromeDriver: chrome on XP (3f10e73a66d2f8575a7b5be3bae23ad8)] -> xpath: /html/body/div[2]/div/div[1]/ul/li[1]/ul/li[1]/a]</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>确认脚本运行当前路径与期盼路径一致性</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>tuangou_xiadan</span>
-						<span class='test-time'>Aug 23, 2018 2:36:46 PM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2018 2:36:46 PM</span>
-	<span class='label end-time'>Aug 23, 2018 2:36:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>浏览器当前页面url是：http://192.168.10.202/personalCenter.html#!paperboardOrder</td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='skip'>
-					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>2:36:46 PM</td>
-					<td class='step-details'>Test skiped</td>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>断言验证：验证页面元素实际值：http://192.168.10.202/personalCenter.html#!paperboardOrder与期望值：http://192.168.10.202/personalCenter.html#!paperboardOrder相同</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>进入纸板团购订单页面</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>页面强制等待：2000毫秒</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>进入纸板团购全部订单页面</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>页面强制等待：2000毫秒</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>获取网页元素：/html/body/div[2]/div[5]/div[1]/div/div[2]/ul[2]/li[6]/a[2]</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>点击页面元素：[[ChromeDriver: chrome on XP (3f10e73a66d2f8575a7b5be3bae23ad8)] -> xpath: /html/body/div[2]/div[5]/div[1]/div/div[2]/ul[2]/li[6]/a[2]]</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>页面强制等待：2000毫秒</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>页面强制等待：2000毫秒</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>进入订单详情页面</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>本地失败截图tuangou_xiadan_0905112040.png已保存</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'>错误截图链接<p><a href="ftp://admin:78LXlx@172.16.0.16:21/2018-09-05//tuangou_xiadan_0905112040.png"  target="_blank">点击查看高清大图</a><p></td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'><p>错误截图预览:<img id="img" src="ftp://admin:78LXlx@172.16.0.16:21/2018-09-05//tuangou_xiadan_0905112040.png" alt="部分浏览器可能无法查看，若无法查看请点击链接" width="600" height="300"></p></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:20:52 AM</td>
+					<td class='step-details'><pre>org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP5C', ip: '172.16.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\admin\AppData\Local\Temp\scoped_dir9516_29771}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3f10e73a66d2f8575a7b5be3bae23ad8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:984)
+	at pages.tuangou.TGHomePage.dd_again(TGHomePage.java:106)
+	at test.TGTest.tuangou_xiadan(TGTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -409,7 +377,114 @@
 	<!-- subview right -->
 
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Exceptions</h3>
+			<ul id='exception-collection' class='exception-collection'>
+				
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchFrameException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>	
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 5, 2018 11:20:30 AM</td>
+										<td class='linked' test-id='1'>tuangou_xiadan---团购下单</td>
+										<td><pre><pre>org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP5C', ip: '172.16.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\admin\AppData\Local\Temp\scoped_dir9516_29771}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=68.0.3440.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3f10e73a66d2f8575a7b5be3bae23ad8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:984)
+	at pages.tuangou.TGHomePage.dd_again(TGHomePage.java:106)
+	at test.TGTest.tuangou_xiadan(TGTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></pre></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -417,31 +492,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 23, 2018 2:36:41 PM</div>
+					<div class='panel-lead'>Sep 5, 2018 11:20:30 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 23, 2018 2:36:46 PM</div>
+			 		<div class='panel-lead'>Sep 5, 2018 11:20:52 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>4,367ms</div>
+					<div class='panel-lead'>21,572ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -467,11 +542,11 @@
 							</tr>
 							<tr>
 								<td>java.version</td>
-								<td>1.8.0_161</td>
+								<td>1.8.0_112</td>
 							</tr>
 							<tr>
 								<td>java.home</td>
-								<td>C:\Program Files\Java\jre1.8.0_161</td>
+								<td>D:\programs\java\jdk1.8\jre</td>
 							</tr>
 							<tr>
 								<td>user.name</td>
@@ -494,21 +569,21 @@
 		<script>
 			var statusGroup = {
 				passParent: 0,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 7,
-				exceptionsParent: 7,
+				skipParent: 0,
+				exceptionsParent: 1,
 				
 				passChild: 0,
-				failChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 7,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 7,
+				exceptionsChild: 26,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

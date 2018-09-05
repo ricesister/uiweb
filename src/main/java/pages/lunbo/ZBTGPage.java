@@ -34,7 +34,7 @@ public class ZBTGPage extends SYLBPage{
 		AssertUtil.assertEquals(getAddWindowTtitle().getText(), "编辑图片", "打开窗口标题与实际不符");
 		LoggerUtil.info("打开新增窗口，测试标题与需求一致");
 		//TODO 绝对路径
-		addPic("C:\\Users\\admin\\fsworkspace2-eclipse\\webui\\image\\lunbo.jpg",getInput());
+		addPicOrFile("image/lunbo.jpg",getInput());
 		click(getWebType());
 		LoggerUtil.info("打开网页类型选择框");
 		WebElement webChoice = getChoice();

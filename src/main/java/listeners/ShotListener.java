@@ -27,15 +27,11 @@ public class ShotListener extends TestListenerAdapter{
 	private static String username = "admin";
 	private static String password = "78LXlx";
 	private static String fwq_ip = "172.16.0.16:21";
-	
-	
-	
-	
-	
 	public static WebDriver driver;
 	
-	
-	 
+	private static int failCount = 0;
+	private static int successCount = 0;
+	private static int skipCount = 0;
 	
 
 
@@ -43,6 +39,8 @@ public class ShotListener extends TestListenerAdapter{
 	public void onTestFailure(ITestResult tr) {
 		super.onTestFailure(tr);
 		Reporter.setEscapeHtml(false);
+		failCount++;
+		System.out.println("-------------------------failcount="+failCount);
 		try {
 			takeScreenShot(tr);
 		} catch (IOException e) {
@@ -51,6 +49,26 @@ public class ShotListener extends TestListenerAdapter{
 		
 	}
 	
+	
+	
+	@Override
+	public void onTestSuccess(ITestResult tr) {
+		super.onTestSuccess(tr);
+		successCount++;
+		System.out.println("-------------------------v="+successCount);
+	}
+
+
+
+	@Override
+	public void onTestSkipped(ITestResult tr) {
+		super.onTestSkipped(tr);
+		skipCount++;
+		System.out.println("-------------------------skipCount="+skipCount);
+	}
+
+
+
 	/**
 	 * 截图方法
 	 * @param tr
@@ -59,7 +77,6 @@ public class ShotListener extends TestListenerAdapter{
 	public void takeScreenShot(ITestResult tr) throws IOException {
 		 
 		
-		/*String url = "screens/"+common.DateUtil.getDateDay()+"/";*/
 		String url = common.DateUtil.getDateDay()+"/";
 		
 		SimpleDateFormat smf = new SimpleDateFormat("MMddHHmmss") ;
@@ -67,11 +84,9 @@ public class ShotListener extends TestListenerAdapter{
         /**
          * 图片名称
          */
+        
         String fileName = tr.getName()+"_"+curTime+".png";
         File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-       /* //把截图拷贝到自定义的目录
-        FileUtils.copyFile(srcFile, new File(fwq_path+url+fileName));*/
-        
         
         /**
          * ftp上传
@@ -109,7 +124,7 @@ public class ShotListener extends TestListenerAdapter{
 		 * 下载图片查看
 		 */
 		String sreenShotLink = "错误截图链接<p><a href=\"ftp://"+username+":"+password+"@"+fwq_ip+"/"+url+"/"+fileName+"\"  target=\"_blank\">点击查看高清大图</a><p>";
-	    String sreenShotImg = "<p>错误截图预览:<img id=\"img\" src=\"ftp://"+username+":"+password+"@"+fwq_ip+"/"+url+"/"+fileName+"\" alt=\"error shot\" width=\"600\" height=\"300\"></p>";
+	    String sreenShotImg = "<p>错误截图预览:<img id=\"img\" src=\"ftp://"+username+":"+password+"@"+fwq_ip+"/"+url+"/"+fileName+"\" alt=\"部分浏览器可能无法查看，若无法查看请点击链接\" width=\"600\" height=\"300\"></p>";
 		
 		Reporter.log(sreenShotLink);
        Reporter.log(sreenShotImg);
@@ -169,6 +184,21 @@ public class ShotListener extends TestListenerAdapter{
         return dir.delete();
     }
 	
-	
+    
+  /*  *//**
+     * 获取数据
+     *//*
+    public static int getSuccess() {
+    	return successCount;
+    }
+    
+    public static int getFail() {
+    	return failCount;
+    }
+    
+    public static int getSkip() {
+    	return skipCount;
+    }
+	*/
 	
 }

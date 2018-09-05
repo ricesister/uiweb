@@ -16,15 +16,13 @@ import pages.tuangou.TGLoginPage;
  * @2018年8月16日
  *
  */
-public class TGTest {
-	private TGLoginPage tgLoginPage = null;
-	private TGHomePage tgHomePage = null;
+public class TGTest extends BaseTest{
+	private TGLoginPage tgLoginPage = new TGLoginPage();
+	private TGHomePage tgHomePage = new TGHomePage();
 	
 	
 	@BeforeClass
 	public void init() {
-		tgLoginPage = new TGLoginPage();
-		tgHomePage = new TGHomePage();
 		ShotListener.driver = tgLoginPage.driver;
 		try {
 			tgLoginPage.tgLogin();
@@ -33,15 +31,16 @@ public class TGTest {
 		}
 	}
 	
-	@Test
+	@Test(description="团购下单",invocationCount=2)
 	public void tuangou_xiadan() {
+		begin();
 		LoggerUtil.info("团购下单脚本开始");
 		try {
 			tgHomePage.toDDAgain();
 			tgHomePage.dd_again();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}
+		}end();
 	}
 	
 	@AfterClass

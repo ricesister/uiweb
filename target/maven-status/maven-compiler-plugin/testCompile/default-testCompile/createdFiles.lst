@@ -1,10 +1,8 @@
-webui\SYLBTest.class
-test\LunBoTest.class
-webui\AppTest.class
+test\BaseTest.class
+test\ProductTest.class
+test\SXTest.class
 test\TGTest.class
 test\GDTest.class
-webui\TGRKTest.class
-webui\ZBTGTest.class
-webui\OfflineImportTest.class
-webui\JFSCTest.class
-webui\JFRKTest.class
+test\GGGLTest.class
+test\PriceProgramTest.class
+test\JFSCTest.class

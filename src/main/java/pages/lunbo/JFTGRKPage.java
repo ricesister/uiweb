@@ -31,7 +31,7 @@ public class JFTGRKPage extends SYLBPage{
 		LoggerUtil.info("点击第二行编辑按钮");
 		AssertUtil.assertEquals(getShowTitle().getText(), "编辑图片", "打开窗口标题与实际不符");
 		LoggerUtil.info("打开编辑窗口，测试标题与需求一致");
-		addPic("C:\\\\Users\\\\admin\\\\fsworkspace2-eclipse\\\\webui\\\\image\\\\jfscrk.jpg", getInput());
+		addPicOrFile("image/jfscrk.jpg", getInput());
 		click(getSubmit());
 		LoggerUtil.info("图片编辑成功");
 		

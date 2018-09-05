@@ -1,7 +1,10 @@
 package pages;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -62,6 +65,7 @@ public class BasePage {
 	 */
 	public void open(String toUrl) {
 		if(toUrl == null || toUrl.equals(rootUrl)) {
+			System.out.println(driver.toString());
 			driver.get(rootUrl);
 			LoggerUtil.info("浏览器打开网页："+rootUrl);
 			
@@ -97,6 +101,20 @@ public class BasePage {
 	}
 	
 	/**
+	 * 
+	 * @description： 移动到某一元素
+	 * @param arr
+	 * @return
+	 */
+	protected void moveToElement(WebElement to) {
+		//使下菜单可见
+		Actions action = new Actions(driver);
+		action.moveToElement(to);
+		action.build().perform();
+		LoggerUtil.info("鼠标移动到元素："+to);
+	}
+	
+	/**
 	 * 点击元素
 	 * @param element
 	 */
@@ -126,6 +144,16 @@ public class BasePage {
 			sendKeys(element, values[i]);
 			i++;
 		}
+	}
+	
+	/**
+	 * 传图片或文件-轮播图等元素用的
+	 * @param path
+	 */
+	protected void addPicOrFile(String path,WebElement input) {
+		File picOrFile = new File(path);
+		sendKeys(input,picOrFile.getAbsolutePath());
+		LoggerUtil.info("文件添加成功");
 	}
 	
 	/**
@@ -168,6 +196,16 @@ public class BasePage {
 		}
 	}
 	
+	/**
+	 * 
+	 * @description： 刷新页面
+	 * @param arr
+	 * @return
+	 */
+	protected void refresh() {
+		driver.navigate().refresh();
+		LoggerUtil.info("刷新页面");
+	}
 	/**
 	 * 判断元素显示在当前页面
 	 * @param element
@@ -299,6 +337,7 @@ public class BasePage {
 	public void quit() {
 		try {
 			driver.quit();
+			driver = null;
 			LoggerUtil.info("退出浏览器，退出驱动");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -351,7 +390,45 @@ public class BasePage {
 	}
 	
 	
-	
+	/**
+     * 判断元素是否能被找到
+     * @param locate
+     * @return
+     */
+    protected boolean checkElementCanBeFind(String locate) {
+      
+      try {
+        driver.findElement(By.xpath(locate));
+      }catch(Exception e) {
+        return false;
+      }
+      return true;
+    }
+    
+    /**
+     * 处理多窗口的切换
+     */
+    public void switchToCurrentWindowHandle() {
+      String currentWindow=driver.getWindowHandle();
+      Set<String> handles=driver.getWindowHandles();
+      LoggerUtil.info("当前窗口数量："+handles.size());
+      Iterator<String> it=handles.iterator();
+      while(it.hasNext()) {
+        if(currentWindow.equals(it.next())) {
+          try {
+            //关闭旧窗口
+            driver.close();
+            //切换到新窗口
+            driver=driver.switchTo().window(it.next());
+            LoggerUtil.info("切换到新窗口："+driver.getTitle());
+          }catch(Exception e) {
+            e.printStackTrace();
+            LoggerUtil.error("无法切换到新窗口");
+          }
+        }
+        
+      }
+    }
 	
 	
 

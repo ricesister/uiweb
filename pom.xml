@@ -20,7 +20,7 @@
   	<plugins>
   	
   		<!-- 邮件 -->
-		<plugin>
+		<!-- <plugin>
 			<groupId>org.codehaus.mojo</groupId>
 			<artifactId>exec-maven-plugin</artifactId>
 			<version>1.3.1</version>
@@ -39,7 +39,7 @@
 			</configuration>
 			</execution>
 			</executions>
-		</plugin>
+		</plugin> -->
 		
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
@@ -60,7 +60,7 @@
   		
   		<!-- 监听 -->
 
-		<plugin>
+		<!-- <plugin>
 
 			<groupId>org.apache.maven.plugins</groupId>
 			
@@ -83,7 +83,7 @@
 						
 					</property>
 				
-					<!-- <property>
+					<property>
 					
 						<name>listener</name>
 						
@@ -91,17 +91,17 @@
 						
 						org.uncommons.reportng.JUnitXMLReporter</value>
 					
-					</property> -->
+					</property>
 				
 				</properties>
 			
 				<workingDirectory>target/</workingDirectory>
 				
-				<!-- <forkMode>always</forkMode> -->
+				<forkMode>always</forkMode>
 			
 			</configuration>
 			
-		</plugin>  	
+		</plugin>  	 -->
   	</plugins>
   </build>
   

@@ -3,9 +3,15 @@
 <suite name="cps-ui自动化测试" verbose="1" preserve-order="true" parallel="false">
   <test name="cps-ui自动化测试">
     <classes>
-      <!-- <class name="test.LunBoTest"/>
-      <class name="test.TGTest"></class> -->
-      <class name="test.ProductTest"></class>
+   <!--   <class name="test.ProductTest"></class>
+    广告管理 -->
+    	
+     	<!-- <class name="test.GGGLTest"/> -->
+     	<class name="test.TGTest"></class>
+	    <!--   <class name="test.SXTest"></class>
+	      <class name="test.PriceProgramTest"></class>
+	      <class name="test.JFSCTest"></class>
+	      <class name="test.ProductTest"></class> -->
     </classes>
   </test> <!-- Test -->
  	<listeners>

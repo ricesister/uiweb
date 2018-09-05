@@ -36,7 +36,6 @@ public class TGLoginPage extends BasePage{
 		sendKeys(getLogin_pwd(), pwd);
 		click(getLogin_submit());
 		sleep(2000);
-		//checkUrl("http://192.168.10.202/group/grouponHome.html");
 		checkText(getUsername_check(), "fsss果实企业");
 		LoggerUtil.info("成功登录团购平台，用户名："+username);
 	}

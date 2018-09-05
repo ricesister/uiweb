@@ -1,5 +1,6 @@
 package pages.lunbo;
 
+import java.io.File;
 import java.util.List;
 import java.util.Random;
 
@@ -11,6 +12,7 @@ import common.AssertUtil;
 import common.LoggerUtil;
 import common.RandomUtil;
 import pages.BasePage;
+import pages.crmrk.CrmHomePage;
 
 /**
  * 
@@ -19,7 +21,7 @@ import pages.BasePage;
  * @2018年8月14日
  *
  */
-public class SYLBPage extends BasePage{
+public class SYLBPage extends CrmHomePage{
 	protected String webAddress = RandomUtil.getString(new Random(), 7);
 	//TODO 查询框切换
 	
@@ -51,8 +53,7 @@ public class SYLBPage extends BasePage{
 		wait(2000, addWindowTtitle, "x");
 		AssertUtil.assertEquals(getAddWindowTtitle().getText(), "编辑图片", "打开窗口标题与实际不符");
 		LoggerUtil.info("打开新增窗口，测试标题与需求一致");
-		//TODO 绝对路径
-		addPic("C:\\Users\\admin\\fsworkspace2-eclipse\\webui\\image\\lunbo.jpg",getInput());
+		addPicOrFile("image/lunbo.jpg",getInput());
 		click(getWebType());
 		LoggerUtil.info("打开网页类型选择框");
 		WebElement webChoice = getChoice();
@@ -94,14 +95,7 @@ public class SYLBPage extends BasePage{
 		AssertUtil.assertNotEquals(rows.size(), 5, "断言结果：轮播图位置已满，请先删除广告位！");
 		return rows;
 	}
-	/**
-	 * 传图片
-	 * @param path
-	 */
-	protected void addPic(String path,WebElement input) {
-		input.sendKeys(path);
-		LoggerUtil.info("图片添加成功");
-	}
+	
 	public WebElement getSylb() {
 		return getElement(sylb, "x");
 	}

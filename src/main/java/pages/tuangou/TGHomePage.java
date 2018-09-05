@@ -46,6 +46,28 @@ public class TGHomePage extends BasePage{
 	
 	
 	/**
+	   * 积分商城下单
+	   */
+	  private String paypwd1 = "//*[@id=\"layui-layer2\"]/div[2]/div/div[1]/div[1]/input";
+	  private String paypwd2 = "//*[@id=\"layui-layer2\"]/div[2]/div/div[1]/div[2]/input";
+	  private String paypwd3 = "//*[@id=\"layui-layer2\"]/div[2]/div/div[1]/div[3]/input";
+	  private String paypwd4 = "//*[@id=\"layui-layer2\"]/div[2]/div/div[1]/div[4]/input";
+	  private String paypwd5 = "//*[@id=\"layui-layer2\"]/div[2]/div/div[1]/div[5]/input";
+	  private String paypwd6 = "//*[@id=\"layui-layer2\"]/div[2]/div/div[1]/div[6]/input";
+	  private String[] pwdInputs = {paypwd1,paypwd2,paypwd3,paypwd4,paypwd5,paypwd6};
+	  private String quedingButton="//*[@id=\"layui-layer2\"]/div[2]/div/div[3]/input[2]";
+	  private String orderMsg="//*[@id=\"payment-success-layer\"]/p";
+	
+	  /**
+	   * 积分商城菜单
+	   */
+	  private String jfscMenu="/html/body/div[1]/div[1]/div/div[1]/div[2]/ul/li[3]/a";
+	  private String allProduct="/html/body/div[2]/div[3]/a[1]";
+	  private String firstProduct="//*[@id=\"list-con\"]/li[1]/div/a/img";
+	  private String bugNowButton="/html/body/div[5]/div[2]/div[3]/input[1]";
+	  private String payButton="//*[@id=\"pay-btn\"]";
+	
+	/**
 	 * 用户名密码等，后期从外部读入
 	 */
 	private String[] payPwd = {"1","2","1","2","1","2"};
@@ -55,6 +77,7 @@ public class TGHomePage extends BasePage{
 	 * @throws InterruptedException 
 	 */
 	public void toDDAgain() throws InterruptedException {
+		driver.navigate().refresh();
 		click(getPersonal());
 		checkUrl("http://192.168.10.202/personalCenter.html");
 		LoggerUtil.info("进入我的中心页面");
@@ -107,7 +130,40 @@ public class TGHomePage extends BasePage{
 		LoggerUtil.info("团购下单成功");
 	}
 	
-	
+	/**
+	   * 去积分商城页面
+	   */
+	  public void toJFSC() {
+	    click(getElement(jfscMenu, "x"));
+	  }
+	  /**
+	   * 积分商城下单
+	   * @throws InterruptedException 
+	   */
+	  
+	  public void buyOrder() throws InterruptedException {
+	    LoggerUtil.info("点击标签下的全部");
+	    sleep(2000);
+	    click(getElement(allProduct, "x"));
+	    sleep(2000);
+	    LoggerUtil.info("点击第一个产品");
+	    click(getElement(firstProduct, "x"));
+	    sleep(2000);
+	    switchToCurrentWindowHandle();
+	    sleep(5000);
+	    LoggerUtil.info("点击立即购买按钮");
+	    click(getElement(bugNowButton, "x"));
+	    sleep(3000);
+	    LoggerUtil.info("点击支付按钮");
+	    click(getElement(payButton, "x"));
+	    sleep(2000);
+	    LoggerUtil.info("输入密码");
+	    sendKeys(getSortsElement(pwdInputs, "x"),payPwd );
+	    LoggerUtil.info("点击确定按钮");
+	    click(getElement(quedingButton, "x"));
+	    sleep(5000);
+	    AssertUtil.assertEquals(getElement(orderMsg, "x").getText(), "支付成功", "");
+	  }
 	public WebElement getZbtg_btn() {
 		return getElement(zbtg_btn, "x");
 	}

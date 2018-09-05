@@ -27,7 +27,7 @@ public class APPPage extends SYLBPage{
 		sleep(2000);
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		LoggerUtil.info("下移屏幕");
-		addPic("C:\\\\Users\\\\admin\\\\fsworkspace2-eclipse\\\\webui\\\\image\\\\app.jpg", 
+		addPicOrFile("image/app.jpg", 
 				getInput());
 		click(getSubmit());
 	}

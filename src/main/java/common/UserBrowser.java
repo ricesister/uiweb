@@ -18,7 +18,7 @@ public class UserBrowser {
 	public static WebDriver getChrome() {
 		//TODO 初始化失败，需要断言
 		System.setProperty("webdriver.chrome.driver", 
-				"C:\\Users\\admin\\fsworkspace2-eclipse\\webui\\src\\main\\resources\\chromedriver.exe");
+				"tools/chromedriver.exe");
 		UserBrowser.driver = new ChromeDriver();
 		LoggerUtil.info("初始化chromedriver成功！");
 		return driver;
@@ -27,7 +27,7 @@ public class UserBrowser {
 	
 	public static WebDriver getFireFox() {
 		System.setProperty("webdriver.geckodriver.driver", 
-				"C:\\Users\\admin\\fsworkspace2-eclipse\\webui\\src\\main\\resources\\geckodriver.exe");
+				"tools/geckodriver.exe");
 		UserBrowser.driver = new FirefoxDriver();
 		LoggerUtil.info("初始化firefoxdriver成功！");
 		return driver;
@@ -37,7 +37,7 @@ public class UserBrowser {
 	//TODO ie
 	public static WebDriver getIE() {
 		System.setProperty("webdriver.geckodriver.driver", 
-				"C:\\Users\\admin\\fsworkspace2-eclipse\\webui\\src\\main\\resources\\geckodriver.exe");
+				"tools/geckodriver.exe");
 		UserBrowser.driver = new FirefoxDriver();
 		LoggerUtil.info("初始化iedriver成功！");
 		return driver;
